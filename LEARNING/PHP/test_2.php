@@ -2,9 +2,8 @@
 
 
 
-
 print_r('<br>');
-print_r(1234);
+print_r(__DIR__);
 print_r('<br>');
 
 
