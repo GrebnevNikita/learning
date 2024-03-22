@@ -139,3 +139,7 @@ $a = new MyClass();
 
 var_dump($a instanceof MyClass);
 var_dump($a instanceof NotMyClass);
+
+
+$ids ="1,2,3,";
+substr($ids, 0, -1);

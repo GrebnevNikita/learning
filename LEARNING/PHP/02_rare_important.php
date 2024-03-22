@@ -594,10 +594,1230 @@ REST API
 
 
 
+<?php
+
+
+class People
+{
+    public static $per_static = 'per_static';
+    public $per_public = 'per_public';
+    private $per_private = 'per_private';
+
+    public function study()
+    {
+        echo "{$this->per_public} учится в {$this->per_private}";
+    }
+}
+
+$people = new People();
+print_r('<br>');
+echo 'isset($people) -' . isset($people);
+print_r('<br>');
+echo 'empty($people) -' . empty($people);
+print_r('<br>');
+echo 'is_null($people) -' . is_null($people);
+print_r('<br>');
+echo 'is_bool($people) -' . is_bool($people);
+print_r('<br>');
+echo 'is_numeric($people) -' . is_numeric($people);
+print_r('<br>');
+echo 'is_float($people) -' . is_float($people);
+print_r('<br>');
+echo 'is_int($people) -' . is_int($people);
+print_r('<br>');
+echo 'is_string($people) -' . is_string($people);
+print_r('<br>');
+echo 'is_object($people) -' . is_object($people);
+print_r('<br>');
+echo 'is_array($people) -' . is_array($people);
+print_r('<br>');
+print_r('<br>');
+print_r('<br>');
+echo 'isset($people->per_public) -' . isset($people->per_public);
+print_r('<br>');
+echo 'empty($people->per_public) -' . empty($people->per_public);
+print_r('<br>');
+echo 'is_null($people->per_public) -' . is_null($people->per_public);
+print_r('<br>');
+echo 'is_bool($people->per_public) -' . is_bool($people->per_public);
+print_r('<br>');
+echo 'is_numeric($people->per_public) -' . is_numeric($people->per_public);
+print_r('<br>');
+echo 'is_float($people->per_public) -' . is_float($people->per_public);
+print_r('<br>');
+echo 'is_int($people->per_public) -' . is_int($people->per_public);
+print_r('<br>');
+echo 'is_string($people->per_public) -' . is_string($people->per_public);
+print_r('<br>');
+echo 'is_object($people->per_public) -' . is_object($people->per_public);
+print_r('<br>');
+echo 'is_array($people->per_public) -' . is_array($people);
+print_r('<br>');
+print_r('<br>');
+print_r('<br>');
+
+echo 'isset($people::$per_static) -' . isset($people::$per_static);
+print_r('<br>');
+echo 'empty($people::$per_static) -' . empty($people::$per_static);
+print_r('<br>');
+echo 'is_null($people::$per_static) -' . is_null($people::$per_static);
+print_r('<br>');
+echo 'is_bool($people::$per_static) -' . is_bool($people::$per_static);
+print_r('<br>');
+echo 'is_numeric($people::$per_static) -' . is_numeric($people::$per_static);
+print_r('<br>');
+echo 'is_float($people::$per_static) -' . is_float($people::$per_static);
+print_r('<br>');
+echo 'is_int($people::$per_static) -' . is_int($people::$per_static);
+print_r('<br>');
+echo 'is_string($people::$per_static) -' . is_string($people::$per_static);
+print_r('<br>');
+echo 'is_object($people::$per_static) -' . is_object($people::$per_static);
+print_r('<br>');
+echo 'is_array($people::$per_static) -' . is_array($people::$per_static);
+print_r('<br>');
+
+print_r('<br>');
+print_r('<br>');
+$set_to_null = null;
+
+echo 'isset($set_to_null) -' . isset($set_to_null);
+print_r('<br>');
+echo 'empty($set_to_null) -' . empty($set_to_null);
+print_r('<br>');
+echo 'is_null($set_to_null) -' . is_null($set_to_null);
+print_r('<br>');
+echo 'is_bool($set_to_null) -' . is_bool($set_to_null);
+print_r('<br>');
+echo 'is_numeric($set_to_null) -' . is_numeric($set_to_null);
+print_r('<br>');
+echo 'is_float($set_to_null) -' . is_float($set_to_null);
+print_r('<br>');
+echo 'is_int($set_to_null) -' . is_int($set_to_null);
+print_r('<br>');
+echo 'is_string($set_to_null) -' . is_string($set_to_null);
+print_r('<br>');
+echo 'is_object($set_to_null) -' . is_object($set_to_null);
+print_r('<br>');
+echo 'is_array($set_to_null) -' . is_array($set_to_null);
+print_r('<br>');
+
+print_r('<br>');
+print_r('<br>');
+$array = [-1, 1, 0, '999', '1', '0', 0.1, 2222.1, false, '', 'string', null, 92233720368547758071, array(), [], [1, 2, 3]];
+
+foreach ($array as $k => $var) {
+print_r('<br>');
+print_r($var);
+print_r('<br>');
+    echo 'isset($var) -' . isset($var);
+    print_r('<br>');
+    echo 'empty($var) -' . empty($var);
+    print_r('<br>');
+    echo 'is_null($var) -' . is_null($var);
+    print_r('<br>');
+    echo 'is_bool($var) -' . is_bool($var);
+    print_r('<br>');
+    echo 'is_numeric($var) -' . is_numeric($var);
+    print_r('<br>');
+    echo 'is_float($var) -' . is_float($var);
+    print_r('<br>');
+    echo 'is_int($var) -' . is_int($var);
+    print_r('<br>');
+    echo 'is_string($var) -' . is_string($var);
+    print_r('<br>');
+    echo 'is_object($var) -' . is_object($var);
+    print_r('<br>');
+    echo 'is_array($var) -' . is_array($var);
+    print_r('<br>');
+    print_r('<br>');
+    print_r('<br>');
+    print_r('<br>');
+}
+
+
+unset($foo);
+
+/*
+
+isset($people) -1
+empty($people) -
+is_null($people) -
+is_bool($people) -
+is_numeric($people) -
+is_float($people) -
+is_int($people) -
+is_string($people) -
+is_object($people) -1
+is_array($people) -
+
+
+isset($people->per_public) -1
+empty($people->per_public) -
+is_null($people->per_public) -
+is_bool($people->per_public) -
+is_numeric($people->per_public) -
+is_float($people->per_public) -
+is_int($people->per_public) -
+is_string($people->per_public) -1
+is_object($people->per_public) -
+is_array($people->per_public) -
+
+
+isset($people::$per_static) -1
+empty($people::$per_static) -
+is_null($people::$per_static) -
+is_bool($people::$per_static) -
+is_numeric($people::$per_static) -
+is_float($people::$per_static) -
+is_int($people::$per_static) -
+is_string($people::$per_static) -1
+is_object($people::$per_static) -
+is_array($people::$per_static) -
+
+
+isset($set_to_null) -
+empty($set_to_null) -1
+is_null($set_to_null) -1
+is_bool($set_to_null) -
+is_numeric($set_to_null) -
+is_float($set_to_null) -
+is_int($set_to_null) -
+is_string($set_to_null) -
+is_object($set_to_null) -
+is_array($set_to_null) -
 
 
 
-*/
+-1
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -
+is_int($var) -1
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+1
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -
+is_int($var) -1
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+0
+isset($var) -1
+empty($var) -1
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -
+is_int($var) -1
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+999
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -
+is_int($var) -
+is_string($var) -1
+is_object($var) -
+is_array($var) -
+
+
+
+
+1
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -
+is_int($var) -
+is_string($var) -1
+is_object($var) -
+is_array($var) -
+
+
+
+
+0
+isset($var) -1
+empty($var) -1
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -
+is_int($var) -
+is_string($var) -1
+is_object($var) -
+is_array($var) -
+
+
+
+
+0.1
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -1
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+2222.1
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -1
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+
+isset($var) -1
+empty($var) -1
+is_null($var) -
+is_bool($var) -1
+is_numeric($var) -
+is_float($var) -
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+
+isset($var) -1
+empty($var) -1
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -
+is_float($var) -
+is_int($var) -
+is_string($var) -1
+is_object($var) -
+is_array($var) -
+
+
+
+
+string
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -
+is_float($var) -
+is_int($var) -
+is_string($var) -1
+is_object($var) -
+is_array($var) -
+
+
+
+
+
+isset($var) -
+empty($var) -1
+is_null($var) -1
+is_bool($var) -
+is_numeric($var) -
+is_float($var) -
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+9.2233720368548E+19
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -1
+is_float($var) -1
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -
+
+
+
+
+Array ( )
+isset($var) -1
+empty($var) -1
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -
+is_float($var) -
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -1
+
+
+
+
+Array ( )
+isset($var) -1
+empty($var) -1
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -
+is_float($var) -
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -1
+
+
+
+
+Array ( [0] => 1 [1] => 2 [2] => 3 )
+isset($var) -1
+empty($var) -
+is_null($var) -
+is_bool($var) -
+is_numeric($var) -
+is_float($var) -
+is_int($var) -
+is_string($var) -
+is_object($var) -
+is_array($var) -1
+
+
+
+
+
+<?php
+print_r('<br>');
+print_r('<br>');
+
+if (-1 != 1) {
+
+    echo 'yes1 ' . (-1 != 1);
+}
+if (-1 == 1) {
+
+    echo 'yes2 ' . (-1 != 1);
+}
+print_r('<br>');
+print_r('<br>');
+var_dump(-1);
+print_r('<br>');
+print_r('<br>');
+var_dump(1);
+
+print_r('<br>');
+print_r('<br>');
+$array = [-1, 1, 0, '999', '1', '0', 0.1, 2222.1, false, '', 'string', null, 92233720368547758071,];
+
+foreach ($array as $k => $var) {
+    print_r('<br>');
+    print_r('<br>');
+    foreach ($array as $k2 => $v) {
+        print_r('<br>');
+
+        if ($var == $v) {
+            echo $var . ' == ' . $v;
+            print_r('<br>');
+        }
+        if ($var != $v) {
+            echo  $var . '!=' . $v;
+            print_r('<br>');
+        }
+
+        if ($var === $v) {
+            echo  $var . '===' . $v;
+            print_r('<br>');
+        }
+
+        if ($var !== $v) {
+            echo $var . '!==' . $v;
+            print_r('<br>');
+        }
+
+        if ($var > $v) {
+            echo $var . '>' . $v;
+            print_r('<br>');
+        }
+
+        if ($var < $v) {
+            echo $var . '<' . $v;
+            print_r('<br>');
+        }
+
+
+    }
+}
+
+
+
+/*
+-1 == -1
+-1===-1
+
+-1!=1
+-1!==1
+-1<1
+
+-1!=0
+-1!==0
+-1<0
+
+-1!=999
+-1!==999
+-1<999
+
+-1!=1
+-1!==1
+-1<1
+
+-1!=0
+-1!==0
+-1<0
+
+-1!=0.1
+-1!==0.1
+-1<0.1
+
+-1!=2222.1
+-1!==2222.1
+-1<2222.1
+
+-1!=
+-1!==
+-1>
+
+-1!=
+-1!==
+-1>
+
+-1!=string
+-1!==string
+-1
+-1!=
+-1!==
+-1>
+
+-1!=9.2233720368548E+19
+-1!==9.2233720368548E+19
+-1<9.2233720368548E+19
+
+
+
+1!=-1
+1!==-1
+1>-1
+
+1 == 1
+1===1
+
+1!=0
+1!==0
+1>0
+
+1!=999
+1!==999
+1<999
+
+1 == 1
+1!==1
+
+1!=0
+1!==0
+1>0
+
+1!=0.1
+1!==0.1
+1>0.1
+
+1!=2222.1
+1!==2222.1
+1<2222.1
+
+1!=
+1!==
+1>
+
+1!=
+1!==
+1>
+
+1!=string
+1!==string
+1
+1!=
+1!==
+1>
+
+1!=9.2233720368548E+19
+1!==9.2233720368548E+19
+1<9.2233720368548E+19
+
+
+
+0!=-1
+0!==-1
+0>-1
+
+0!=1
+0!==1
+0<1
+
+0 == 0
+0===0
+
+0!=999
+0!==999
+0<999
+
+0!=1
+0!==1
+0<1
+
+0 == 0
+0!==0
+
+0!=0.1
+0!==0.1
+0<0.1
+
+0!=2222.1
+0!==2222.1
+0<2222.1
+
+0 ==
+0!==
+
+0!=
+0!==
+0>
+
+0!=string
+0!==string
+0
+0 ==
+0!==
+
+0!=9.2233720368548E+19
+0!==9.2233720368548E+19
+0<9.2233720368548E+19
+
+
+
+999!=-1
+999!==-1
+999>-1
+
+999!=1
+999!==1
+999>1
+
+999!=0
+999!==0
+999>0
+
+999 == 999
+999===999
+
+999!=1
+999!==1
+999>1
+
+999!=0
+999!==0
+999>0
+
+999!=0.1
+999!==0.1
+999>0.1
+
+999!=2222.1
+999!==2222.1
+999<2222.1
+
+999!=
+999!==
+999>
+
+999!=
+999!==
+999>
+
+999!=string
+999!==string
+999
+999!=
+999!==
+999>
+
+999!=9.2233720368548E+19
+999!==9.2233720368548E+19
+999<9.2233720368548E+19
+
+
+
+1!=-1
+1!==-1
+1>-1
+
+1 == 1
+1!==1
+
+1!=0
+1!==0
+1>0
+
+1!=999
+1!==999
+1<999
+
+1 == 1
+1===1
+
+1!=0
+1!==0
+1>0
+
+1!=0.1
+1!==0.1
+1>0.1
+
+1!=2222.1
+1!==2222.1
+1<2222.1
+
+1!=
+1!==
+1>
+
+1!=
+1!==
+1>
+
+1!=string
+1!==string
+1
+1!=
+1!==
+1>
+
+1!=9.2233720368548E+19
+1!==9.2233720368548E+19
+1<9.2233720368548E+19
+
+
+
+0!=-1
+0!==-1
+0>-1
+
+0!=1
+0!==1
+0<1
+
+0 == 0
+0!==0
+
+0!=999
+0!==999
+0<999
+
+0!=1
+0!==1
+0<1
+
+0 == 0
+0===0
+
+0!=0.1
+0!==0.1
+0<0.1
+
+0!=2222.1
+0!==2222.1
+0<2222.1
+
+0 ==
+0!==
+
+0!=
+0!==
+0>
+
+0!=string
+0!==string
+0
+0!=
+0!==
+0>
+
+0!=9.2233720368548E+19
+0!==9.2233720368548E+19
+0<9.2233720368548E+19
+
+
+
+0.1!=-1
+0.1!==-1
+0.1>-1
+
+0.1!=1
+0.1!==1
+0.1<1
+
+0.1!=0
+0.1!==0
+0.1>0
+
+0.1!=999
+0.1!==999
+0.1<999
+
+0.1!=1
+0.1!==1
+0.1<1
+
+0.1!=0
+0.1!==0
+0.1>0
+
+0.1 == 0.1
+0.1===0.1
+
+0.1!=2222.1
+0.1!==2222.1
+0.1<2222.1
+
+0.1!=
+0.1!==
+0.1>
+
+0.1!=
+0.1!==
+0.1>
+
+0.1!=string
+0.1!==string
+0.1
+0.1!=
+0.1!==
+0.1>
+
+0.1!=9.2233720368548E+19
+0.1!==9.2233720368548E+19
+0.1<9.2233720368548E+19
+
+
+
+2222.1!=-1
+2222.1!==-1
+2222.1>-1
+
+2222.1!=1
+2222.1!==1
+2222.1>1
+
+2222.1!=0
+2222.1!==0
+2222.1>0
+
+2222.1!=999
+2222.1!==999
+2222.1>999
+
+2222.1!=1
+2222.1!==1
+2222.1>1
+
+2222.1!=0
+2222.1!==0
+2222.1>0
+
+2222.1!=0.1
+2222.1!==0.1
+2222.1>0.1
+
+2222.1 == 2222.1
+2222.1===2222.1
+
+2222.1!=
+2222.1!==
+2222.1>
+
+2222.1!=
+2222.1!==
+2222.1>
+
+2222.1!=string
+2222.1!==string
+2222.1
+2222.1!=
+2222.1!==
+2222.1>
+
+2222.1!=9.2233720368548E+19
+2222.1!==9.2233720368548E+19
+2222.1<9.2233720368548E+19
+
+
+
+!=-1
+!==-1
+<-1
+
+!=1
+!==1
+<1
+
+== 0
+!==0
+
+!=999
+!==999
+<999
+
+!=1
+!==1
+<1
+
+== 0
+!==0
+
+!=0.1
+!==0.1
+<0.1
+
+!=2222.1
+!==2222.1
+<2222.1
+
+==
+===
+
+==
+!==
+
+!=string
+!==string
+
+==
+!==
+
+!=9.2233720368548E+19
+!==9.2233720368548E+19
+<9.2233720368548E+19
+
+
+
+!=-1
+!==-1
+<-1
+
+!=1
+!==1
+<1
+
+!=0
+!==0
+<0
+
+!=999
+!==999
+<999
+
+!=1
+!==1
+<1
+
+!=0
+!==0
+<0
+
+!=0.1
+!==0.1
+<0.1
+
+!=2222.1
+!==2222.1
+<2222.1
+
+==
+!==
+
+==
+===
+
+!=string
+!==string
+
+==
+!==
+
+!=9.2233720368548E+19
+!==9.2233720368548E+19
+<9.2233720368548E+19
+
+
+
+string!=-1
+string!==-1
+string>-1
+
+string!=1
+string!==1
+string>1
+
+string!=0
+string!==0
+string>0
+
+string!=999
+string!==999
+string>999
+
+string!=1
+string!==1
+string>1
+
+string!=0
+string!==0
+string>0
+
+string!=0.1
+string!==0.1
+string>0.1
+
+string!=2222.1
+string!==2222.1
+string>2222.1
+
+string!=
+string!==
+string>
+
+string!=
+string!==
+string>
+
+string == string
+string===string
+
+string!=
+string!==
+string>
+
+string!=9.2233720368548E+19
+string!==9.2233720368548E+19
+string>9.2233720368548E+19
+
+
+
+!=-1
+!==-1
+<-1
+
+!=1
+!==1
+<1
+
+== 0
+!==0
+
+!=999
+!==999
+<999
+
+!=1
+!==1
+<1
+
+!=0
+!==0
+<0
+
+!=0.1
+!==0.1
+<0.1
+
+!=2222.1
+!==2222.1
+<2222.1
+
+==
+!==
+
+==
+!==
+
+!=string
+!==string
+
+==
+===
+
+!=9.2233720368548E+19
+!==9.2233720368548E+19
+<9.2233720368548E+19
+
+
+
+9.2233720368548E+19!=-1
+9.2233720368548E+19!==-1
+9.2233720368548E+19>-1
+
+9.2233720368548E+19!=1
+9.2233720368548E+19!==1
+9.2233720368548E+19>1
+
+9.2233720368548E+19!=0
+9.2233720368548E+19!==0
+9.2233720368548E+19>0
+
+9.2233720368548E+19!=999
+9.2233720368548E+19!==999
+9.2233720368548E+19>999
+
+9.2233720368548E+19!=1
+9.2233720368548E+19!==1
+9.2233720368548E+19>1
+
+9.2233720368548E+19!=0
+9.2233720368548E+19!==0
+9.2233720368548E+19>0
+
+9.2233720368548E+19!=0.1
+9.2233720368548E+19!==0.1
+9.2233720368548E+19>0.1
+
+9.2233720368548E+19!=2222.1
+9.2233720368548E+19!==2222.1
+9.2233720368548E+19>2222.1
+
+9.2233720368548E+19!=
+9.2233720368548E+19!==
+9.2233720368548E+19>
+
+9.2233720368548E+19!=
+9.2233720368548E+19!==
+9.2233720368548E+19>
+
+9.2233720368548E+19!=string
+9.2233720368548E+19!==string
+9.2233720368548E+19
+9.2233720368548E+19!=
+9.2233720368548E+19!==
+9.2233720368548E+19>
+
+9.2233720368548E+19 == 9.2233720368548E+19
+9.2233720368548E+19===9.2233720368548E+19
+
+
+
+
+
+Looping through letters is possible. I'm amazed at how few people know that.
+
+for($col = 'R'; $col != 'AD'; $col++) {
+    echo $col.' ';
+}
+
+returns: R S T U V W X Y Z AA AB AC
+
+Условный (тернарный) оператор
+условие ? выражение1 : выражение2
+Тернарная операция или трёхместная операция (от лат. ternus — трёхкратный) — операция, имеющая 3 операнда:
+ Тернарная условная операция — операция в информатике, возвращающая свой второй или третий операнд в зависимости от логического значения первого операнда.
+
+
+match
+больше похожем на тернарный оператор. Также, в отличие от switch, используется строгое сравнение (===), а не слабое (==).
+Простой пример использования match
+
+<?php
+$food = 'cake';
+$return_value = match ($food) {
+    'apple' => 'На столе лежит яблоко',
+    'banana' => 'На столе лежит банан',
+    'cake' => 'На столе стоит торт',
+};
+var_dump($return_value);
+
+
+https://www.php.net/manual/ru/control-structures.declare.php#control-structures.declare.ticks
+
+ример использования тика
+
+<?php
+
+declare(ticks=1);
+
+// Функция, исполняемая при каждом тике
+function tick_handler()
+{
+    echo "Вызывается tick_handler()\n";
+}
+
+register_tick_function('tick_handler'); // вызывает событие тика
+
+$a = 1; // вызывает событие тика
+
+if ($a > 0) {
+    $a += 2; // вызывает событие тика
+    print $a; // вызывает событие тика
+}
+It's amazing how many people didn't grasp the concept here.
+ Note the wording in the documentation.
+ It states that the tick handler is called every n native execution cycles.
+That means native instructions, not including system calls (i'm guessing).
+ This can give you a very good idea if you need to optimize a particular part of your script,
+ since you can measure quite effectively how many native instructions are in your actual code.
+
+
+
+
 
 
 

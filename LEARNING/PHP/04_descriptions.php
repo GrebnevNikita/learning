@@ -4,7 +4,7 @@
 
 Со́кет (англ. socket — разъём)
 https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BA%D0%B5%D1%82_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81)
-
+https://www.youtube.com/watch?v=19d4AXt3dSI&ab_channel=MerionAcademy
 https://ru.wikipedia.org/wiki/WebSocket
 
 
@@ -165,6 +165,115 @@ echo "<pre>$output</pre>";
 Скаля́р (от лат. scalaris — ступенчатый) — величина, полностью определяемая в любой координатной системе одним числом или функцией, которое не изменяется при изменении пространственной системы координат.
 
 
+Declaring class properties or methods as static makes them accessible without needing an instantiation of the class
+
+
+Classes defined as abstract cannot be instantiated, and any class that contains at least one abstract method must also be abstract.
+
+
+MVC расшифровывается как «модель-представление-контроллер» (от англ. model-view-controller). Это способ организации кода, который предполагает выделение блоков, отвечающих за решение разных задач.
+Один блок отвечает за данные приложения, другой отвечает за внешний вид, а третий контролирует работу приложения.
+
+
+Модель — этот компонент отвечает за данные, а также определяет структуру приложения. Например, если вы создаете To-Do приложение, код компонента model будет определять список задач и отдельные задачи.
+Представление — этот компонент отвечает за взаимодействие с пользователем. То есть код компонента view определяет внешний вид приложения и способы его использования.
+Контроллер — этот компонент отвечает за связь между model и view. Код компонента controller определяет, как сайт реагирует на действия пользователя. По сути, это мозг MVC-приложения.
+
+
+
+URL - Uniform Resource Locator, сокр. URL «единообразный указатель местонахождения ресурса») — адрес ресурса в сети Интернет.
+https://ru.wikipedia.org/wiki/URL
+
+
+REST (Representational state transfer) – это стиль архитектуры программного обеспечения для распределенных систем,
+ таких как World Wide Web, который, как правило, используется для построения веб-служб.
+ Системы, поддерживающие REST, называются RESTful-системами.
+https://www.youtube.com/watch?v=08-RlaLgWx4&ab_channel=MerionAcademy
+
+
+HTTP (англ. HyperText Transfer Protocol — «протокол передачи гипертекста») — сетевой протокол прикладного уровня,
+который изначально предназначался для получения с серверов гипертекстовых документов в формате HTML,
+а с течением времени стал универсальным средством взаимодействия между узлами как Всемирной паутины,так и изолированных веб-инфраструктур.
+
+
+No, REST is the way HTTP should be used.
+
+Today we only use a tiny bit of the HTTP protocol's methods – namely GET and POST. The REST way to do it is to use all of the protocol's methods.
+
+For example, REST dictates the usage of DELETE to erase a document (be it a file, state, etc.) behind a URI,
+ whereas, with HTTP, you would misuse a GET or POST query like ...product/?delete_id=22.
+
+
+
+CRUD (сокр. от англ. create, read, update, delete — «создать, прочесть, обновить, удалить»)
+
+
+
+
+https://www.youtube.com/watch?v=z0wDQc_UE2M&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=19d4AXt3dSI&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=08-RlaLgWx4&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=liirXTlmmRY&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=19d4AXt3dSI&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=C9T_7D12URI&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=EeARyFrZsnU&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=OmlkEhRHRTA&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=ChEdFh7Q-Vw&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=yO3Ep_bQYgw&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=bv5UqdWm-5k&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=klmpiHLSuXA&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=aZTL2zRmOnA&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=rCbdQc42eCw&ab_channel=MerionAcademy
+
+
+https://www.youtube.com/watch?v=aZTL2zRmOnA&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=klmpiHLSuXA&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=IBzTDkYNB7I&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=6Pmn93H2az8&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=e0U6-vhWX3s&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=NtGN7Nz6I0c&ab_channel=MerionAcademy
+https://www.youtube.com/watch?v=yMSJKBQINAc&ab_channel=MerionAcademy
+
+
+
+
+Объе́ктно ориенти́рованное программи́рование (сокр. ООП) — методология или стиль программирования на
+основе описания типов/моделей предметной области и их взаимодействия, представленных порождением из прототипов или как экземпляры классов, которые образуют иерархию наследования[1].
+
+Идеологически, ООП — подход к программированию как к моделированию информационных объектов,
+решающий на более высоком абстрактном уровне основную задачу структурного программирования — структурирование информации с точки зрения управляемости[2]. Это позволяет управлять самим процессом моделирования и реализовывать крупные программные проекты.
+
+Управляемость для иерархических систем предполагает минимизацию избыточности данных
+(аналогичную нормализации) и их целостность, поэтому созданное удобно управляемым — будет и удобно пониматься.
+ Таким образом, через тактическую задачу управляемости решается стратегическая задача —
+транслировать понимание задачи программистом в наиболее удобную для дальнейшего использования форму.
+
+
+
+
+TLS (англ. transport layer security — Протокол защиты транспортного уровня[1]),
+как и его предшественник SSL (англ. secure sockets layer — слой защищённых сокетов),
+ — криптографические протоколы, обеспечивающие защищённую передачу данных между узлами в сети Интернет[2].
+ TLS и SSL используют асимметричное шифрование для аутентификации,
+симметричное шифрование для конфиденциальности и коды аутентичности сообщений для сохранения целостности сообщений.
+
+
+
+Какие основные принципы ООП?
+Четыре основных принципа объектно-ориентированного программирования следующие.
+Абстракция. Моделирование требуемых атрибутов и взаимодействий сущностей в виде классов для определения абстрактного представления системы.
+Инкапсуляция. ...
+Наследование. ...
+Полиморфизм.
+
+
+
+
+
+$file = 'people.txt';
+$current = file_get_contents($file);
+$current .= "John Smith\n";
+file_put_contents($file, $current);
 
 
 
